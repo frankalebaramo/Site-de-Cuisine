@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fef1df;
+}
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 15px solid #6f6f6f;
+}
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .content .carte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.main .content .carte .gauche{
+   flex: 0 0 30%;
+   padding: 20px;
+   background-color:black;
+   color:#fff;
+}
+.main .content .carte .gauche button{
+    padding: 10px 20px;
+    background-color: #fef1df;
+    color:black;
+    border:none;
+    margin-top: 30px;
+    margin-bottom: 25%;
+    margin-left: 25%;
+    outline:white;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+} 
+.main .content .carte .droite img{
+    height:300px;
+    width: 400px;
+    margin-top: 5px;
+}
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px 100px;;
+    text-decoration: none;
+}
+footer h1{
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+}
+footer .services{
+    margin-top: -10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+footer .services .service h3{
+    text-decoration: underline;
+}
+footer .services .service{
+    margin-right: 30px;  
+}
+footer .services .service p{
+    max-width: 300px;
+}
+footer .services .service button{
+    padding: 10px 20px;
+    background-color: #fef1df;
+    color:black;
+    border:none;
+    margin-top: 30px;
+    margin-bottom: 25%;
+    margin-left: 25%;
+    outline:white;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+footer #contact{
+    color: #6F6F6F;
+}
