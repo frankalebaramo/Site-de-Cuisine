@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vos suggestions</title>
+    <link rel="stylesheet" href="formulaire.css" />
+    <script language="javascript" type="text/javascript">
+        function ValidateForm(){
+            var prenom = document.getElementById('prenom').value;
+            var nom = document.getElementById('nom').value;
+            var mail = document.getElementById('mail').value;
+            var telephone = document.getElementById('telephone').value;
+
+            if ((prenom=="") ||(nom=="")||(mail=="")||(telephone=="")){
+                alert("Veuillez remplir les champs obligatoire");
+            }
+            if(!mail.match(/[a-z0-9_\-\.]+@[a-z0-9_\-\.]+\.[a-z]+/i)){
+                alert(mail+"n'est pas une adresse mail valide");
+            }
+            if (!telephone.match(/[0-9]{8}/gi)) {
+                alert(numero+"n'est pas un numéro de téléphone valide");
+            }
+            
+
+            
+
+        
+    </script>
+  </head>
+<body>
+
+    <br>
+    <br></br>
+	<h1>Proposez nous vos idée de recette</h1>
+	<p>Afin de nous proposer votre idée de recette, rien de compliqué c'est même tout simplement aussi simple que préparer une omelette. Effectivement, Pour cela il suffit de remplir le formulaire suivant en indiquant la recette que vous souhaitez partager.</p>
+	<form >
+			<label id="nom">Nom</label>
+                    <input type="text" autocomplete="off"required/>
+
+                <br>
+					<label id="prenom">Prenom</label>
+                    <input type="text" autocomplete="off" required />
+                    <br>
+                
+                	<label >Adresse e-mail</label>
+                    <input type="email" autocomplete="off"required/>
+                   
+                <br>
+                    <label id="telephone">Numéro de téléphone</label>
+                    <input type="text" autocomplete="off" required/>
+                   <br>
+                
+                    <label>recettes </label>
+                    <textarea  required></textarea>
+        	<div class="pied-formulaire" align="center">
+            <button onclick="ValidateForm()">Envoyer le message</button>
+        </div>
+    </form>
+    <br>
+    <br>
+    
+
+</body>
+</html>
